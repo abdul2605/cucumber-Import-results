@@ -1,0 +1,217 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-07T02:41:36.701Z",
+        "line": 5,
+        "name": "simple integer addition",
+        "description": "",
+        "id": "as-a-user--i-can-add-two-numbers;simple-integer-addition",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have entered 1 into the calculator",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                }
+              ],
+              "location": "calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have entered 2 into the calculator",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 15
+                }
+              ],
+              "location": "calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1007600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I press add",
+            "match": {
+              "location": "calculator.StepDefinitions.i_press_add()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected: java.lang.String\u003c3\u003e but was: java.lang.Integer\u003c3\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat calculator.StepDefinitions.the_result_should_be_on_the_screen(StepDefinitions.java:36)\r\n\tat ✽.the result should be 3 on the screen(classpath:calculator/addition.feature:9)\r\n",
+              "duration": 3993700,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "the result should be 3 on the screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 21
+                }
+              ],
+              "location": "calculator.StepDefinitions.the_result_should_be_on_the_screen(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SET-38591"
+          },
+          {
+            "name": "@SET-38597"
+          },
+          {
+            "name": "@SET-38583"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I can add two numbers",
+    "description": "",
+    "id": "as-a-user--i-can-add-two-numbers",
+    "keyword": "Feature",
+    "uri": "classpath:calculator/addition.feature",
+    "tags": [
+      {
+        "name": "@SET-38591",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@SET-38597",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 11
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-07T02:41:36.812Z",
+        "line": 5,
+        "name": "simple integer multiplication",
+        "description": "",
+        "id": "as-a-user--i-can-multiply-two-numbers;simple-integer-multiplication",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have entered 3 into the calculator",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 15
+                }
+              ],
+              "location": "calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have entered 0 into the calculator",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 15
+                }
+              ],
+              "location": "calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I press multiply",
+            "match": {
+              "location": "calculator.StepDefinitions.i_press_multiply()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected: java.lang.String\u003c3\u003e but was: java.lang.Integer\u003c3\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat calculator.StepDefinitions.the_result_should_be_on_the_screen(StepDefinitions.java:36)\r\n\tat ✽.the result should be 0 on the screen(classpath:calculator/multiplication.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "the result should be 0 on the screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 21
+                }
+              ],
+              "location": "calculator.StepDefinitions.the_result_should_be_on_the_screen(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQ_CALC-641"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I can multiply two numbers",
+    "description": "",
+    "id": "as-a-user--i-can-multiply-two-numbers",
+    "keyword": "Feature",
+    "uri": "classpath:calculator/multiplication.feature",
+    "tags": [
+      {
+        "name": "@REQ_CALC-641",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
